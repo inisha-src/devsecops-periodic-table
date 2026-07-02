@@ -2,155 +2,361 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevSecOps Toolkit</title>
+
+    <title>DevSecOps Tools Hub</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>DevSecOps Toolkit</h1>
-        <p>Interactive Periodic Table of DevSecOps Tools</p>
-    </header>
+<header>
 
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search DevSecOps tools...">
+    <h1>DevSecOps Tools Hub</h1>
+
+    <p>
+        Explore Popular DevSecOps Tools Across the Software Delivery Lifecycle
+    </p>
+
+</header>
+
+<section class="search-container">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search DevSecOps Tools..."
+    >
+
+</section>
+
+<section class="legend">
+
+    <div class="item">
+        <span class="version"></span>
+        Version Control
     </div>
 
-    <div class="legend">
-        <div><span class="build"></span> Build</div>
-        <div><span class="ci"></span> CI/CD</div>
-        <div><span class="security"></span> Security</div>
-        <div><span class="cloud"></span> Cloud</div>
-        <div><span class="monitor"></span> Monitoring</div>
+    <div class="item">
+        <span class="build"></span>
+        Build
     </div>
 
-    <main class="periodic-table">
+    <div class="item">
+        <span class="cicd"></span>
+        CI / CD
+    </div>
 
-        <!-- Row 1 -->
-        <div class="tool build">
-            <h2>Git</h2>
-            <p>Version Control</p>
-        </div>
+    <div class="item">
+        <span class="security"></span>
+        Security
+    </div>
 
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
-        <div class="empty"></div>
+    <div class="item">
+        <span class="container"></span>
+        Containers
+    </div>
 
-        <div class="tool monitor">
-            <h2>ELK</h2>
-            <p>Logging</p>
-        </div>
+    <div class="item">
+        <span class="cloud"></span>
+        Cloud / IaC
+    </div>
 
-        <!-- Row 2 -->
+    <div class="item">
+        <span class="monitor"></span>
+        Monitoring
+    </div>
 
-        <div class="tool ci">
-            <h2>Jenkins</h2>
-            <p>CI/CD</p>
-        </div>
+    <div class="item">
+        <span class="artifact"></span>
+        Artifacts
+    </div>
 
-        <div class="tool build">
-            <h2>Maven</h2>
-            <p>Build Tool</p>
-        </div>
+</section>
 
-        <div class="tool security">
-            <h2>SonarQube</h2>
-            <p>Code Scan</p>
-        </div>
+<main class="table">
 
-        <div class="tool security">
-            <h2>Trivy</h2>
-            <p>Image Scan</p>
-        </div>
+<!-- ================= ROW 1 ================= -->
 
-        <div class="empty"></div>
+<div class="tool version">
+    <h3>Git</h3>
+    <p>Version Control</p>
+</div>
 
-        <div class="tool cloud">
-            <h2>Terraform</h2>
-            <p>IaC</p>
-        </div>
+<div class="empty"></div>
+<div class="empty"></div>
+<div class="empty"></div>
+<div class="empty"></div>
+<div class="empty"></div>
+<div class="empty"></div>
+<div class="empty"></div>
+<div class="empty"></div>
 
-        <div class="tool monitor">
-            <h2>Grafana</h2>
-            <p>Dashboard</p>
-        </div>
-                <!-- Row 3 -->
+<div class="tool monitor">
+    <h3>Grafana</h3>
+    <p>Dashboards</p>
+</div>
 
-        <div class="tool build">
-            <h2>Docker</h2>
-            <p>Containers</p>
-        </div>
 
-        <div class="tool cloud">
-            <h2>K8s</h2>
-            <p>Orchestration</p>
-        </div>
+<!-- ================= ROW 2 ================= -->
 
-        <div class="tool ci">
-            <h2>GitHub</h2>
-            <p>Actions</p>
-        </div>
+<div class="tool version">
+    <h3>GitHub</h3>
+    <p>Repository</p>
+</div>
 
-        <div class="tool security">
-            <h2>OWASP</h2>
-            <p>DAST</p>
-        </div>
+<div class="tool version">
+    <h3>GitLab</h3>
+    <p>Repository</p>
+</div>
 
-        <div class="tool security">
-            <h2>Snyk</h2>
-            <p>SCA</p>
-        </div>
+<div class="tool version">
+    <h3>Bitbucket</h3>
+    <p>Repository</p>
+</div>
 
-        <div class="tool monitor">
-            <h2>Prom</h2>
-            <p>Metrics</p>
-        </div>
+<div class="tool build">
+    <h3>Maven</h3>
+    <p>Build Tool</p>
+</div>
 
-        <div class="tool cloud">
-            <h2>Ansible</h2>
-            <p>Automation</p>
-        </div>
+<div class="tool build">
+    <h3>Gradle</h3>
+    <p>Build Tool</p>
+</div>
 
-        <!-- Row 4 -->
+<div class="tool build">
+    <h3>Ant</h3>
+    <p>Automation</p>
+</div>
 
-        <div class="empty"></div>
+<div class="tool build">
+    <h3>Bazel</h3>
+    <p>Build Tool</p>
+</div>
 
-        <div class="tool build">
-            <h2>NPM</h2>
-            <p>Packages</p>
-        </div>
+<div class="tool artifact">
+    <h3>Nexus</h3>
+    <p>Repository</p>
+</div>
 
-        <div class="tool security">
-            <h2>Nmap</h2>
-            <p>Network Scan</p>
-        </div>
+<div class="tool artifact">
+    <h3>Harbor</h3>
+    <p>Registry</p>
+</div>
 
-        <div class="tool security">
-            <h2>Vault</h2>
-            <p>Secrets</p>
-        </div>
+<div class="tool monitor">
+    <h3>Prometheus</h3>
+    <p>Metrics</p>
+</div>
 
-        <div class="tool cloud">
-            <h2>AWS</h2>
-            <p>Cloud</p>
-        </div>
 
-        <div class="tool monitor">
-            <h2>Nagios</h2>
-            <p>Health</p>
-        </div>
 
-        <div class="empty"></div>
+<!-- ================= ROW 3 ================= -->
 
-    </main>
+<div class="tool cicd">
+    <h3>Jenkins</h3>
+    <p>Automation</p>
+</div>
 
-    <script src="script.js"></script>
+<div class="tool cicd">
+    <h3>GitHub Actions</h3>
+    <p>Workflow</p>
+</div>
 
-</body>
-</html>
+<div class="tool cicd">
+    <h3>GitLab CI</h3>
+    <p>Pipeline</p>
+</div>
+
+<div class="tool cicd">
+    <h3>CircleCI</h3>
+    <p>Pipeline</p>
+</div>
+
+<div class="tool cicd">
+    <h3>Travis CI</h3>
+    <p>Pipeline</p>
+</div>
+
+<div class="tool cicd">
+    <h3>Azure DevOps</h3>
+    <p>DevOps</p>
+</div>
+
+<div class="tool cicd">
+    <h3>TeamCity</h3>
+    <p>CI Server</p>
+</div>
+
+<div class="tool cicd">
+    <h3>Bamboo</h3>
+    <p>Deployment</p>
+</div>
+
+<div class="tool monitor">
+    <h3>Datadog</h3>
+    <p>Monitoring</p>
+</div>
+
+<div class="tool monitor">
+    <h3>Splunk</h3>
+    <p>Analytics</p>
+</div>
+<!-- ================= ROW 4 ================= -->
+
+<div class="tool container">
+    <h3>Docker</h3>
+    <p>Containers</p>
+</div>
+
+<div class="tool container">
+    <h3>Podman</h3>
+    <p>Container Engine</p>
+</div>
+
+<div class="tool container">
+    <h3>Buildah</h3>
+    <p>Image Builder</p>
+</div>
+
+<div class="tool container">
+    <h3>Kaniko</h3>
+    <p>Image Builder</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Kubernetes</h3>
+    <p>Orchestration</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Helm</h3>
+    <p>Package Manager</p>
+</div>
+
+<div class="tool cloud">
+    <h3>OpenShift</h3>
+    <p>Platform</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Rancher</h3>
+    <p>Cluster Mgmt</p>
+</div>
+
+<div class="tool monitor">
+    <h3>Zabbix</h3>
+    <p>Monitoring</p>
+</div>
+
+<div class="tool monitor">
+    <h3>Nagios</h3>
+    <p>Infrastructure</p>
+</div>
+
+
+<!-- ================= ROW 5 ================= -->
+
+<div class="tool cloud">
+    <h3>Terraform</h3>
+    <p>Infrastructure</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Ansible</h3>
+    <p>Automation</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Pulumi</h3>
+    <p>IaC</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Packer</h3>
+    <p>Image Builder</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Vagrant</h3>
+    <p>VM Provisioning</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Argo CD</h3>
+    <p>GitOps</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Flux CD</h3>
+    <p>GitOps</p>
+</div>
+
+<div class="tool cloud">
+    <h3>Istio</h3>
+    <p>Service Mesh</p>
+</div>
+
+<div class="tool cloud">
+    <h3>K3s</h3>
+    <p>Lightweight K8s</p>
+</div>
+
+<div class="tool monitor">
+    <h3>Loki</h3>
+    <p>Log Aggregation</p>
+</div>
+
+
+<!-- ================= ROW 6 ================= -->
+
+<div class="empty"></div>
+
+<div class="tool artifact">
+    <h3>JFrog</h3>
+    <p>Artifactory</p>
+</div>
+
+<div class="tool artifact">
+    <h3>Apache Archiva</h3>
+    <p>Repository</p>
+</div>
+
+<div class="tool artifact">
+    <h3>Verdaccio</h3>
+    <p>NPM Registry</p>
+</div>
+
+<div class="tool artifact">
+    <h3>ChartMuseum</h3>
+    <p>Helm Charts</p>
+</div>
+
+<div class="tool artifact">
+    <h3>Docker Hub</h3>
+    <p>Registry</p>
+</div>
+
+<div class="tool artifact">
+    <h3>Amazon ECR</h3>
+    <p>Container Registry</p>
+</div>
+
+<div class="tool artifact">
+    <h3>GitHub Packages</h3>
+    <p>Packages</p>
+</div>
+
+<div class="tool artifact">
+    <h3>Azure ACR</h3>
+    <p>Registry</p>
+</div>
+
+<div class="empty">
+    
+</div>
