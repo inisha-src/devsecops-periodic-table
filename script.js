@@ -1,20 +1,16 @@
-const searchInput = document.getElementById("search");
+const search = document.getElementById("search");
 const tools = document.querySelectorAll(".tool");
 
-searchInput.addEventListener("keyup", function () {
+search.addEventListener("input", () => {
+    const value = search.value.toLowerCase();
 
-    const searchValue = searchInput.value.toLowerCase();
+    tools.forEach(tool => {
+        const text = tool.innerText.toLowerCase();
 
-    tools.forEach(function (tool) {
-
-        const toolText = tool.innerText.toLowerCase();
-
-        if (toolText.includes(searchValue)) {
-            tool.style.display = "flex";
+        if(text.includes(value)){
+            tool.style.display = "block";
         } else {
             tool.style.display = "none";
         }
-
     });
-
 });
