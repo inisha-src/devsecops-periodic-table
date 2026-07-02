@@ -24,16 +24,22 @@ function renderTools(data){
             <p>${tool.desc}</p>
         `;
 
-        // 👇 CLICK EVENT ADDED
+        // CLICK → OPEN MODAL
         div.addEventListener("click", () => {
-            window.open(tool.url, "_blank");
+            document.getElementById("modal").style.display = "flex";
+            document.getElementById("modal-title").innerText = tool.name;
+            document.getElementById("modal-desc").innerText = tool.desc;
+
+            document.getElementById("visit-btn").onclick = () => {
+                window.open(tool.url, "_blank");
+            };
         });
 
         table.appendChild(div);
     });
 }
 
-// Search
+// SEARCH
 search.addEventListener("input", () => {
     const value = search.value.toLowerCase();
 
