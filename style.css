@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef3f8;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/* Search */
+
+.search-container{
+    display:flex;
+    justify-content:center;
+    margin:25px 0;
+}
+
+.search-container input{
+    width:380px;
+    padding:12px 18px;
+    border:2px solid #0d6efd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+/* Legend */
+
+.legend{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+    font-weight:bold;
+}
+
+.legend div{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.legend span{
+    width:18px;
+    height:18px;
+    border-radius:4px;
+    display:inline-block;
+}
+
+.legend .build{
+    background:#4dabf7;
+}
+
+.legend .ci{
+    background:#40c057;
+}
+
+.legend .security{
+    background:#fa5252;
+}
+
+.legend .cloud{
+    background:#845ef7;
+}
+
+.legend .monitor{
+    background:#fd7e14;
+}
+
+/* Periodic Table */
+
+.periodic-table{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(7,120px);
+    gap:18px;
+    justify-content:center;
+    padding-bottom:50px;
+}
+
+/* Tool Cards */
+
+.tool{
+    height:110px;
+    border-radius:12px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.tool:hover{
+    transform:translateY(-8px) scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+.tool h2{
+    font-size:18px;
+    margin-bottom:6px;
+}
+
+.tool p{
+    font-size:13px;
+}
+
+/* Empty Spaces */
+
+.empty{
+    visibility:hidden;
+}
+
+/* Colors */
+
+.build{
+    background:#4dabf7;
+}
+
+.ci{
+    background:#40c057;
+}
+
+.security{
+    background:#fa5252;
+}
+
+.cloud{
+    background:#845ef7;
+}
+
+.monitor{
+    background:#fd7e14;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    .periodic-table{
+        grid-template-columns:repeat(3,110px);
+    }
+
+    .empty{
+        display:none;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .periodic-table{
+        grid-template-columns:repeat(2,110px);
+    }
+
+    header h1{
+        font-size:28px;
+    }
+
+    .search-container input{
+        width:90%;
+    }
+
+}
